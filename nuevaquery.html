@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crear consulta</title>
+</head>
+<body>
+	<a href="{{log_route}}">{{log}}</a> 
+	<form method="post" action="/query/new_query">
+		<h2>Consulta</h2>
+		Categor&iacute;a: <br>
+		<input type="text" name="category"><br>
+		Nombre: <br>
+		<input type="text" name="name"><br>
+		Descripci&oacute;n: <br>
+		<textarea name="description"></textarea><br>
+		Base de datos: <br>
+		<input type="text" name="db"><br>
+		Sentencia: <br>
+		<textarea name="query"></textarea><br>
+		<input type="submit" value="Crear">
+	</form>
+</body>
+</html>
