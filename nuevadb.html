@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>Registrar base de datos</title>
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
-	<a href="{{log_route}}">{{log}}</a> 
-	<form method="post" action="/db/new_db">
-		Nombre base de datos<br>
-		<input type="text" name="dbname"><br>
-		Descripci&oacute;n:<br>
-		<input type="text" name="description"><br>
-		User: <br>
-		<input type="text" name="user"><br>
-		Password: <br>
-		<input type="password" name="password"><br>
-		DSN: <br>
-		<input type="text" name="dsn"><br>
-		Host: <br>
-		<input type="text" name="host"><br>
-		Clase driver: <br>
-		<input type="text" name="classname"><br>
-		Subprotocol: <br>
-		<input type="text" name="subprotocol"><br>
-		Params: <br>
-		<input type="text" name="params"><br>
-		<input type="submit" value="Registrar">
-	</form>
+	<p id="titulo">Consultor</p>
+	<div class="salir">
+		<a href="{{log_route}}" class="btn-salir">Salir</a>
+	</div>
+	<div class="container">
+		<p class="tarea"><strong>Crear base de datos</strong></p>
+		<hr size="1px" color="BDC2C9" class="linea"/>
+		<form method="post" action="/db/new_db">
+			<div class="form-input" id="primer-form">
+				<p class="texto">Nombre base de datos</p>
+				<input type="text" name="dbname" ><br>
+			</div>
+			<p class="texto">Descripción</p>
+			<div class="form-input">
+				<input type="text" name="description"><br>
+			</div>
+			<p class="texto">Usuario</p>
+			<div class="form-input">
+				<input type="text" name="user"><br>
+			</div>
+			<p class="texto">Contraseña</p>
+			<div class="form-input">
+				<input type="password" name="password"><br>
+			</div>
+			<p class="texto">DSN</p>
+			<div class="form-input">
+				<input type="text" name="dsn"><br>
+			</div>
+			<p class="texto">Host</p>
+			<div class="form-input">
+				<input type="text" name="host"><br>
+			</div>
+			<p class="texto">Clase driver</p>
+			<div class="form-input">
+				<input type="text" name="classname"><br>
+			</div>
+			<p class="texto">Subprotocolo</p>
+			<div class="form-input">
+				<input type="text" name="subprotocol"><br>
+			</div>
+			<p class="texto">Parametros</p>
+			<div class="form-input">
+				<input type="text" name="params"><br>
+			</div>
+			<div class="div-registrar">
+				<input type="submit" value="Registrar" class="btn-registrar">
+			</div>
+		</form>
+	</div>
 </body>
 </html>

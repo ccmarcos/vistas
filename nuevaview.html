@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Crear consulta</title>
+	<title>Crear vista</title>
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
-	<a href="{{log_route}}">{{log}}</a> 
-	<form method="post" action="/view/new_view">
-		<h2>Vista</h2>
-		Nombre: <br>
-		<input type="text" name="name"><br>
-		ID query: <br>
-		<input type="text" name="query_id"><br>
-		Sentencia: <br>
-		<textarea name="view"></textarea><br>
-		<input type="submit" value="Crear">
-	</form>
+	<p id="titulo">Consultor</p>
+	<div class="salir">
+		<a href="{{log_route}}" class="btn-salir">Salir</a>
+	</div>
+	<div class="container">
+		<p class="tarea"><strong>Vista</strong></p>
+		<hr size="1px" color="BDC2C9" class="linea"/>
+		<form method="post" action="/view/new_view">
+			<div class="form-input" id="primer-form">
+				<p class="texto">Nombre</p>
+				<input type="text" name="name"><br>
+			</div>
+			<p class="texto">ID query</p>
+			<div class="form-input">
+				<input type="text" name="query_id"><br>
+			</div>
+			<p class="texto">Sentencia</p>
+			<div class="form-input">
+				<textarea name="view"></textarea><br>
+			</div>
+			<div class="div-registrar">
+				<input type="submit" value="Crear" class="btn-registrar">
+			</div>
+		</form>
+	</div>
 </body>
 </html>

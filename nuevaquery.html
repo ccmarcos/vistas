@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>Crear consulta</title>
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
-	<a href="{{log_route}}">{{log}}</a> 
-	<form method="post" action="/query/new_query">
-		<h2>Consulta</h2>
-		Categor&iacute;a: <br>
-		<input type="text" name="category"><br>
-		Nombre: <br>
-		<input type="text" name="name"><br>
-		Descripci&oacute;n: <br>
-		<textarea name="description"></textarea><br>
-		Base de datos: <br>
-		<input type="text" name="db"><br>
-		Sentencia: <br>
-		<textarea name="query"></textarea><br>
-		<input type="submit" value="Crear">
-	</form>
+	<p id="titulo">Consultor</p>
+	<div class="salir">
+		<a href="{{log_route}}" class="btn-salir">Salir</a>
+	</div>
+	<div class="container">
+		<p class="tarea"><strong>Consulta</strong></p>
+		<hr size="1px" color="BDC2C9" class="linea"/>
+		<form method="post" action="/query/new_query">
+			<div class="form-input" id="primer-form">
+				<p class="texto">Categoría</p>
+				<input type="text" name="category"><br>
+			</div>
+			<p class="texto">Nombre</p>
+			<div class="form-input">
+				<input type="text" name="name"><br>
+			</div>
+			<p class="texto">Descripción</p>
+			<div class="form-input">
+				<textarea name="description"></textarea><br>
+			</div>
+			<p class="texto">Base de datos</p>
+			<div class="form-input">
+				<input type="text" name="db"><br>
+			</div>
+			<p class="texto">Sentencia</p>
+			<div class="form-input">
+				<textarea name="query"></textarea><br>
+			</div>
+			<div class="div-registrar">
+				<input type="submit" value="Crear" class="btn-registrar">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
