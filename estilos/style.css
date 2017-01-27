@@ -92,3 +92,96 @@ box-shadow: 0 0 1px 1px #6392c5;
 .btn-salir:hover{
   background-color: #4965b5;
 }
+
+/*Estilos para error.html*/
+.body{
+  background-color: #1f1f38;
+}
+
+.contenedor-error{
+  width:500px;
+  height:500px;
+  position:absolute;
+  top: 100px;
+  left:50%;
+  margin-left: -250px;  /* 50% del ancho de la div en px */
+}
+
+.error{
+  text-align: center;
+  color: #f06b6c;
+  font-family: 'Nunito', sans-serif;
+}
+
+.h1{
+  font-size: 50px;
+}
+.h2{
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+#midiv1{
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  background-color: #454562;
+  width: 110px;
+  height: 170px;
+  z-index: 2;
+  transform: skewY(8deg);
+  -webkit-transform: skewY(8deg);
+  -moz-transform: skewY(8deg);
+  -o-transform: skewY(8deg);
+
+  box-shadow: 5px -2px 0 #1f1f38;
+  -webkit-box-shadow: 5px -2px 0 #1f1f38;
+  -moz-box-shadow: 5px -2px 0 #1f1f38;
+  -o-box-shadow: 5px -2px 0 #1f1f38;
+}
+
+#midiv2{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 32%;
+  margin-left: -68px;
+  background-color: #f06b6c;
+  width: 110px;
+  height: 170px;
+}
+
+#div1 {
+    position: relative;
+    top: 88px;
+    left: 220px;
+    width: 60px;
+    height: 150px;
+    margin: 50px;
+    padding: 10px;
+    -webkit-perspective: 10px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+    perspective: 10px;
+    perspective-origin: 10% 10%;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    background-color: #5e3648;
+    -webkit-transform: rotateX(80deg); /* Chrome, Safari, Opera */
+    transform: rotateX(80deg);
+}
+
+.circulo {
+    position: absolute;
+    z-index: 3;
+    top: 240px;
+    left: 250px;
+     width: 18px;
+     height: 18px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1f1f38;
+}
